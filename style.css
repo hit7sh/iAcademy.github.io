@@ -1,0 +1,221 @@
+body {
+    background-image: url("img/study.jpg");
+}
+.header {
+    overflow: hidden;
+    background-image: linear-gradient(to right, red, blue, green);
+    padding: 20px 10px;
+}
+.header a {
+    background-color:orange;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.header a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+.header-right {
+    float: right;
+}
+h1:hover {
+    color:red;
+}
+.container {
+    display:flex;
+}
+.container .card {
+    width:25%;
+    height:300px;
+    border:1px solid black;
+}
+.container .card1 {
+    background-image: url("img/ocean-gce36577f5_1920.jpg");
+    background-size: cover;
+}
+.container .card1 h2 {
+    text-align: center;
+    color:yellow;
+    padding-top:50px;
+}
+.container .card2 {
+    background-image: url("img/study2.jpg");
+    background-size: cover;
+}
+.container .card3 {
+    background-image: url("img/study3.jpg");
+    background-size: cover;
+}
+.container .card4 {
+    background-image: url("img/study4.jpg");
+    background-size: cover;
+}
+.introduce {
+    margin: 20px;
+    padding: 30px;
+    font-size:23px;
+    font-family: cosmic, sans-serif;
+    color: coral;
+}
+.html_table {
+    background-image: linear-gradient(30deg, #28B463, #F1C40F);
+}
+.html_table table {
+    margin: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.html_table table td, th {
+    padding: 10px;
+    text-align: center;
+    border:2px solid;
+}
+.html_form {
+    padding: 50px;
+}
+.html_form form {
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 1px 1px 16px black;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.html_form form h2 {
+    color: blue;
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 10px;
+}
+.html_form form input {
+    width: 90%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border-left: 2px solid orange;
+}
+.html_form form input:focus {
+    border-left: 4px solid blue;
+    border-right: 4px solid blue;
+}
+.html_form form select {
+    width: 90%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border-left: 2px solid orange;
+}
+.html_form form select:focus {
+    border-left: 4px solid blue;
+    border-right: 4px solid blue;
+}
+.html_form form button {
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: orange;
+    color:blue;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: serif;
+    font-size: 12px;
+    margin: 10px;
+    box-shadow: 1px 1px 8px black;
+}
+footer{
+    font-family: cosmic, sans-serif;
+    background-color: #CCCCFF;
+    padding: 30px;
+}
+footer .pages{
+    text-align: center;
+}
+footer .pages h3{
+    color:black;
+    font-size:20px;
+}
+footer .pages a{
+    text-decoration: none;
+    margin: 10px;
+    color:brown;
+}
+footer .pages a:hover {
+    color:chartreuse;
+}
+
+
+
+footer .doc{
+    text-align: center;
+}
+footer .doc h3{
+    color:black;
+    font-size:20px;
+}
+footer .doc a{
+    text-decoration: none;
+    margin: 10px;
+    color:brown;
+}
+footer .doc a:hover {
+    color:chartreuse;
+}
+
+
+
+footer .social{
+    text-align: center;
+}
+footer .social h3{
+    color:black;
+    font-size:20px;
+}
+footer .social a{
+    text-decoration: none;
+    margin: 10px;
+    color:brown;
+}
+footer .social a:hover {
+    color:chartreuse;
+}
+
+
+
+footer .contact{
+    text-align: center;
+}
+footer .contact h3{
+    color:black;
+    font-size:20px;
+}
+footer .contact a{
+    text-decoration: none;
+    margin: 10px;
+    color:brown;
+}
+footer .contact a:hover {
+    color:chartreuse;
+}
+
+footer p {
+    text-align: center;
+}
