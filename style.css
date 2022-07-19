@@ -261,3 +261,15 @@ footer .contact a:hover {
 footer p {
     text-align: center;
 }
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover {
+    border-radius: 20px;
+    border: 5px solid;
+}
+
+i:hover {
+    background-color: gold;
+}

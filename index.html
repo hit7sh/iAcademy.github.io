@@ -1,19 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Database Connection</title>
+    <title>iAcademy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("h2").click(function () {
+                $(".html_form").slideToggle();
+            });
+            $("#myno").click(function () {
+                var element = $(this);
+                var $temp = $("<input>");
+                $("body").append($temp);
+                $temp.val($(element).html()).select();
+                document.execCommand("copy");
+                $temp.remove();
+                alert('Number is copied to your clipboard!');
+            });
+        });
+    </script>
 </head>
 
 <body>
-    <form action="dummy_php.php" method="POST">
-        first_name<input name="first_name">
-        last_name<input name="last_name">
-        <button type="Submit" name="save">SUBMIT</button>
-    </form>
+    <div class="header">
+        <a href="index.html" class="logo">iAcademy</a>
+        <div class="header-right">
+            <a class="active" href="#home">Home</a>
+            <a
+                href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvlqxPQGjHHsQWNPmsMWvWbdrsnZnDNRFpKVQJHTtHtcVGCZQhfrcxrmNgXJQLmDjKMGDB">Contact</a>
+            <a href="https://ilearn.com">About</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card card1" id="card1">
+            <h2>You are special!</h2>
+        </div>
+        <div class="card card2" id="card2">
+        </div>
+        <div class="card card3" id="card3"></div>
+        <div class="card card4" id="card4"></div>
+    </div>
+
+
+    <p class="introduce">iAcademy is a strong platform with immense potential for students from anywhere and anytime to
+        access cutting-edge Mentorship and Certification Program widespread with a larger number of domains and niches
+        to explore learning. E-learning has been the fastest growing way for an aspirant to start their journey into
+        pursuing their Dream Career.
+
+        Our Vision lies to bring in a technology-oriented career-driven Industrial Experience into the aspirants career
+        with Great Value.
+
+        "Learn, Grow, Prosper"...
+    </p>
+
+    <div>
+        <h2 id="below">Please fill the form <i style="color:red">below</i> to keep learning with us.</h2>
+    </div>
+    <br>
+    <!--        HTML FORMS-->
+    <div class="html_form">
+        <form action="action.php" onsubmit="return validation()" method="post">
+            <h2>Register</h2>
+            <input type="text" id="username" name="Name" placeholder="Full Name"><br>
+            <span id="errorname" style="color:red;"></span>
+            <input type="text" id="email" name="Email" placeholder="email"><br>
+            <span id="erroremail" style="color:red;"></span>
+            <input type="number" id="number" name="Number" placeholder="Phone no."><br>
+            <span id="errornumber" style="color:red;"></span>
+
+            <select id="Branch" name="Branch" required>
+                <option>--BRANCH---</option>
+                <option>CSE</option>
+                <option>MECH</option>
+                <option>ECE</option>
+            </select><br>
+            <select id="Year" name="Year" required>
+                <option>--YEAR--</option>
+                <option>1st</option>
+                <option>2nd</option>
+                <option>3rd</option>
+                <option>4th</option>
+            </select><br>
+            <input type="text" name="College" placeholder="College Name" required><br>
+            <button type="Submit" name="save">Register</button>
+            <button type="Reset">Reset</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="img/office-building.png" width="150">
+        </div>
+        <div class="pages">
+            <h3>Pages</h3>
+            <a href="https://www.1stop.ai/about">About us</a> |
+            <a href="https://en.wikipedia.org/wiki/Blog">Blogs</a>
+        </div>
+
+        <div class="doc">
+            <h3>documents</h3>
+            <a href="docs/terms_of_use.pdf">Terms of use</a>|
+            <a href="docs/privacy-policy-template.pdf">Privacy Policy</a>
+        </div>
+
+        <div class="social">
+            <h3>Follow us</h3>
+            <a href="https://www.facebook.com/1Stopai-102490171820303/"><i class="fa fa-facebook-square"
+                    aria-hidden="true"></i> Facebook</a> |
+            <a href="https://www.instagram.com/iacademy.ai/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i>
+                Instagram</a> |
+            <a href="https://in.linkedin.com/company/1stop-ai"><i class="fa fa-linkedin" aria-hidden="true"></i>
+                LinkedIn</a> |
+            <a href="https://twitter.com/hashtag/1stop"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+        </div>
+
+        <div class="contact">
+            <h3>Contact us</h3>
+            <a
+                href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvlqxPQGjHHsQWNPmsMWvWbdrsnZnDNRFpKVQJHTtHtcVGCZQhfrcxrmNgXJQLmDjKMGDB">iAcademy@gmail.com</a>
+            |
+            <a id="myno">+913123456789</a>
+        </div>
+
+        <p>Copyright &copy; 2021 iAcademy. All rights reserved</p>
+    </footer>
 </body>
 
 </html>
